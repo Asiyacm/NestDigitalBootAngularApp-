@@ -1,0 +1,39 @@
+<app-navigation></app-navigation>
+<style>
+    .bgm{background-image:url('https://static.vecteezy.com/system/resources/previews/008/169/402/non_2x/abstract-shapes-and-line-in-nude-pastel-colors-neutral-background-in-minimalist-style-contemporary-illustration-free-vector.jpg') ;}
+</style>
+<div class="bgm" style="height:900px;background-position:center;background-repeat: no-repeat;background-size: cover;border: 3px;">
+    <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Employee code</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email Id</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Address</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Username</th>
+        <th scope="col">Password</th>
+        <th scope="col">Confirm password</th>
+     </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let i of employee">
+
+        <td>{{i.empCode}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.emailId}}</td>
+        <td>{{i.designation}}</td>
+        <td>{{i.salary}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.mobile}}</td>
+        <td>{{i.username}}</td>
+        <td>{{i.password}}</td>
+        <td>{{i.cPassword}}</td>
+      
+    </tr>
+    </tbody>
+    
+  </table>
