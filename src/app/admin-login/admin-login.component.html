@@ -1,0 +1,34 @@
+<style>
+    .bgm{background-image:url('https://wallpaperaccess.com/full/2314983.jpg') ;}
+</style>
+<div class="bgm" style="height:700px;background-position:center;background-repeat: no-repeat;background-size: cover;border: 3px;">
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h2>ADMIN LOGIN</h2>
+                </div>
+                <div class="col col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">Username</label>
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
+
+                </div>
+                <div class="col col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+
+                    <button (click)="readValues()"class="btn btn-success">Login</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
