@@ -9,6 +9,7 @@ import { AddSecurityComponent } from './add-security/add-security.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 
 const myRoute:Routes=[
@@ -16,10 +17,17 @@ const myRoute:Routes=[
     path:"",
     component:AdminLoginComponent
   },
+  
+  {
+    path:"employeeLogin",
+    component:EmployeeLoginComponent
+  },
+
   {
     path:"employeeAdd",
     component:AddEmployeeComponent
   },
+  
   {
     path:"securityAdd",
     component:AddSecurityComponent
@@ -33,7 +41,8 @@ const myRoute:Routes=[
     AddEmployeeComponent,
     AdminLoginComponent,
     AddSecurityComponent,
-    NavigationComponent
+    NavigationComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
