@@ -49,6 +49,15 @@ export class ApiService {
     return this.http.post("http://localhost:8080/sAdd",dataToSend)
   }
 
+  SecuritySearch=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/sSearch",dataToSend)
+  }
+
+  SecurityDelete=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/sDelete",dataToSend)
+  }
 
 
 }
