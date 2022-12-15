@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-add-employee',
@@ -18,6 +19,8 @@ export class AddEmployeeComponent {
   password=""
   cPassword=""
 
+  constructor(private api:ApiService){}
+
 
   readValue=()=>
  {
@@ -27,7 +30,29 @@ export class AddEmployeeComponent {
     "address":this.address,"mobile":this.mobile,"username":this.username, "password":this.password, "cPassword":this.cPassword
   }
   console.log(data)
-
+this.api.EmployeeAdd(data).subscribe(
+    (response:any)=>
+    {
+      console.log(response)
+      if (response.status=="success")
+      {
+        alert("Employee added successfully")
+        this.empCode=""
+        this.name=""
+        this.emailId=""
+        this.designation=""
+        this.salary=""
+        this.address=""
+        this.mobile=""
+        this.username=""
+        this.password=""
+        this.cPassword=""
+      }
+      else{
+        alert("Something went wrong")
+      }
+    }
+  )
 }
 
 }
