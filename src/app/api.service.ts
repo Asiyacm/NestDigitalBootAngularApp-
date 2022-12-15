@@ -38,6 +38,11 @@ export class ApiService {
     return this.http.post("http://localhost:8080/delete",dataToSend)
   }
 
+  SecurityLogin=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/sLogin",dataToSend)
+  }
+
 
   SecurityAdd=(dataToSend:any)=>
   {
