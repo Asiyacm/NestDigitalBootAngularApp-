@@ -18,6 +18,17 @@ export class ApiService {
     return this.http.post("http://localhost:8080/add",dataToSend)
   }
 
+  EmployeeSearch=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/search",dataToSend)
+  }
+
+  EmployeeDelete=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/delete",dataToSend)
+  }
+
+
   SecurityAdd=(dataToSend:any)=>
   {
     return this.http.post("http://localhost:8080/sAdd",dataToSend)
