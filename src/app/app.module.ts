@@ -15,6 +15,7 @@ import { EmployeeViewComponent } from './employee-view/employee-view.component';
 import { EmployeeProfileViewComponent } from './employee-profile-view/employee-profile-view.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { SecuritySearchComponent } from './security-search/security-search.component';
+import { SecurityViewComponent } from './security-view/security-view.component';
 
 
 const myRoute:Routes=[
@@ -62,7 +63,13 @@ const myRoute:Routes=[
   {
     path:"securitySearch",
     component:SecuritySearchComponent
+  },
+
+  {
+    path:"securityView",
+    component:SecurityViewComponent
   }
+
   
   
 ]
@@ -79,7 +86,8 @@ const myRoute:Routes=[
     EmployeeViewComponent,
     EmployeeProfileViewComponent,
     SecurityLoginComponent,
-    SecuritySearchComponent
+    SecuritySearchComponent,
+    SecurityViewComponent
   ],
   imports: [
     BrowserModule,
