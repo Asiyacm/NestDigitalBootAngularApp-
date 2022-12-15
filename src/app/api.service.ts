@@ -8,6 +8,11 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
+  EmployeeLogin=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/login",dataToSend)
+  }
+
   EmployeeAdd=(dataToSend:any)=>
   {
     return this.http.post("http://localhost:8080/add",dataToSend)
