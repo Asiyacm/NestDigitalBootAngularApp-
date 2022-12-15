@@ -8,19 +8,22 @@ import { ApiService } from '../api.service';
 })
 export class EmployeeProfileViewComponent {
 
-  userId:any=""
-  constructor(private api:ApiService){
-    this.userId=localStorage.getItem("userInfo")
-    let data:any={"id":this.userId}
-    this.api.EmployeeProfileView(data).subscribe(
-      (response:any)=>
-      {
-        console.log(response)
-        this.data=response;
-      }
-    )
+  empCode:any=""
+Data:any=[]
+
+
+
+constructor(private api:ApiService){
+  this.empCode=localStorage.getItem("empCode")
+  let Data:any={
+    "empCode":this.empCode
   }
-  data:any=[]
-
-
+  this.api.EmployeeProfileView(Data).subscribe(
+    (response:any)=>{
+      console.log(response)
+      this.Data=response
+    }
+  )
+  }
+  
 }
