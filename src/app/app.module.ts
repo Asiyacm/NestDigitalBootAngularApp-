@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
+import { EmployeeViewComponent } from './employee-view/employee-view.component';
 
 
 const myRoute:Routes=[
@@ -28,11 +29,16 @@ const myRoute:Routes=[
     path:"employeeAdd",
     component:AddEmployeeComponent
   },
+
   {
     path:"employeeSearch",
     component:EmployeeSearchComponent
   },
   
+  {
+    path:"employeeView",
+    component:EmployeeViewComponent
+  },
   {
     path:"securityAdd",
     component:AddSecurityComponent
@@ -48,7 +54,8 @@ const myRoute:Routes=[
     AddSecurityComponent,
     NavigationComponent,
     EmployeeLoginComponent,
-    EmployeeSearchComponent
+    EmployeeSearchComponent,
+    EmployeeViewComponent
   ],
   imports: [
     BrowserModule,
