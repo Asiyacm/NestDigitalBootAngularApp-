@@ -21,16 +21,14 @@ export class EmployeeLoginComponent {
       (response:any)=>
       {
         if (response.status=="success")
-      {
-        alert("Employee login successfully")
-       
-        this.username=""
-        this.password=""
-       
-      }
-      else{
-        alert("Invalid Credential")
-      }
+        {
+          console.log(data)
+          localStorage.setItem("userInfo",response.userId)
+          this.route.navigate(['/employeeProfileView'])
+        }
+        else{
+          alert("Invalid Login")
+        }
        
       }
     )

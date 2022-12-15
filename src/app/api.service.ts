@@ -23,6 +23,11 @@ export class ApiService {
     return this.http.get("http://localhost:8080/view")
   }
 
+  EmployeeProfileView=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/profile",dataToSend)
+  }
+
   EmployeeSearch=(dataToSend:any)=>
   {
     return this.http.post("http://localhost:8080/search",dataToSend)
