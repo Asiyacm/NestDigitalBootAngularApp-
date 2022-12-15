@@ -7,18 +7,39 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { FormsModule } from '@angular/forms';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AdminLoginComponent
+  },
+  {
+    path:"employeeAdd",
+    component:AddEmployeeComponent
+  },
+  {
+    path:"securityAdd",
+    component:AddSecurityComponent
+  }
+  
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     AddEmployeeComponent,
     AdminLoginComponent,
-    AddSecurityComponent
+    AddSecurityComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
