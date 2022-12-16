@@ -93,4 +93,18 @@ export class ApiService {
     return this.http.post("http://localhost:8080/logEmployeeViewDaily",dataToSend)
   }
 
+  addVisitorLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/logVisitor",dataToSend)
+  }
+
+  viewVisitorLog=()=>
+  {
+    return this.http.get("http://localhost:8080/logVisitorView")
+  }
+
+  viewDailyVisitorLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/logVisitorViewDaily",dataToSend)
+  }
 }
