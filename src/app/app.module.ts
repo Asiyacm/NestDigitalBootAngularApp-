@@ -26,11 +26,16 @@ import { ViewVisitorLogComponent } from './view-visitor-log/view-visitor-log.com
 import { ViewLeaveComponent } from './view-leave/view-leave.component';
 import { LeaveStatusComponent } from './leave-status/leave-status.component';
 import { ViewEmployeeLogComponent } from './view-employee-log/view-employee-log.component';
+import { HomeComponent } from './home/home.component';
 
 
 const myRoute:Routes=[
   {
     path:"",
+    component:HomeComponent
+  },
+  {
+    path:"admin",
     component:AdminLoginComponent
   },
   
@@ -159,7 +164,8 @@ const myRoute:Routes=[
     ViewVisitorLogComponent,
     ViewLeaveComponent,
     LeaveStatusComponent,
-    ViewEmployeeLogComponent
+    ViewEmployeeLogComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
