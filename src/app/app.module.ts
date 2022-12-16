@@ -20,6 +20,9 @@ import { SecurityViewProfileComponent } from './security-view-profile/security-v
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { EmployeeDailyLogComponent } from './employee-daily-log/employee-daily-log.component';
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
+import { VisitorLogComponent } from './visitor-log/visitor-log.component';
+import { VisitorDailyLogComponent } from './visitor-daily-log/visitor-daily-log.component';
+import { ViewVisitorLogComponent } from './view-visitor-log/view-visitor-log.component';
 
 
 const myRoute:Routes=[
@@ -92,6 +95,20 @@ const myRoute:Routes=[
   {
     path:"employeeDailyLog",
     component:EmployeeDailyLogComponent
+  } ,
+  {
+    path:"visitorLog",
+    component:VisitorLogComponent
+  },
+
+  {
+    path:"visitorDailyLog",
+    component:VisitorDailyLogComponent
+  },
+
+  {
+    path:"viewVisitorLog",
+    component:ViewVisitorLogComponent
   }
 
 
@@ -117,7 +134,10 @@ const myRoute:Routes=[
     SecurityViewProfileComponent,
     ApplyLeaveComponent,
     EmployeeDailyLogComponent,
-    EmployeeLogComponent
+    EmployeeLogComponent,
+    VisitorLogComponent,
+    VisitorDailyLogComponent,
+    ViewVisitorLogComponent
   ],
   imports: [
     BrowserModule,
