@@ -1,42 +1,78 @@
 <nav class="navbar navbar-expand-lg bg-success navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Nest digital</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/employeeAdd">Add Employee</a>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Nest digital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Employee
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/employeeAdd"> Add Employee</a></li>
+              <li><a class="dropdown-item" routerLink="/employeeView">View Employee</a></li>
+              <li><a class="dropdown-item" routerLink="/employeeSearch">Search Employee</a></li>
+              
+            </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link "routerLink="/employeeView">View Employee</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Security
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/securityAdd"> Add Security</a></li>
+              <li><a class="dropdown-item" routerLink="/securityView">View Security</a></li>
+              <li><a class="dropdown-item" routerLink="/securitySearch">Search Security</a></li>
+              
+            </ul>
           </li>
+         
 
-          
-          <li class="nav-item">
-            <a class="nav-link "routerLink="/employeeSearch">Search Employee</a>
-          </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/viewLeave">View all leave</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Employee Log
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/viewEmployeeLog"> View Employee Log</a></li>
+            <li><a class="dropdown-item" routerLink="/employeeDailyLog">View Employee Daily Log</a></li>
+            
+            
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Visitor log
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/viewVisitorLog"> View visitor log</a></li>
+            <li><a class="dropdown-item" routerLink="/visitorDailyLog">View daily visitor log</a></li>
+            
+            
+          </ul>
+        </li>
+
+       
 
         
-          <li class="nav-item">
-            <a class="nav-link "routerLink="/securityAdd">Add Security</a>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link "routerLink="/securitySearch">Search Security</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link "routerLink="/securityView">View Security</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin">Logout</a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/">Logout</a>
-          </li>
-         
-        </ul>
-      </div>
+        
+       
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
