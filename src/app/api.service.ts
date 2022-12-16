@@ -78,6 +78,16 @@ export class ApiService {
   }
 
 
+  viewLeave=()=>
+  {
+    return this.http.get("http://localhost:8080/lView")
+  }
+
+  leaveStatus=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/updatedStatus",dataToSend)
+  }
+
   addEmployeeLog=(dataToSend:any)=>
   {
     return this.http.post("http://localhost:8080/employeeLog",dataToSend)
