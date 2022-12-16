@@ -28,6 +28,7 @@ import { LeaveStatusComponent } from './leave-status/leave-status.component';
 import { ViewEmployeeLogComponent } from './view-employee-log/view-employee-log.component';
 import { HomeComponent } from './home/home.component';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
+import { EmployeeNavigationComponent } from './employee-navigation/employee-navigation.component';
 
 
 const myRoute:Routes=[
@@ -167,7 +168,8 @@ const myRoute:Routes=[
     LeaveStatusComponent,
     ViewEmployeeLogComponent,
     HomeComponent,
-    HomeNavigationComponent
+    HomeNavigationComponent,
+    EmployeeNavigationComponent
   ],
   imports: [
     BrowserModule,
