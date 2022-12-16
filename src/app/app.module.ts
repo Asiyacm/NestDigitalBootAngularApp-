@@ -30,6 +30,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
 import { EmployeeNavigationComponent } from './employee-navigation/employee-navigation.component';
 import { LogNavigationComponent } from './log-navigation/log-navigation.component';
+import { SecurityNavigationComponent } from './security-navigation/security-navigation.component';
 
 
 const myRoute:Routes=[
@@ -171,7 +172,8 @@ const myRoute:Routes=[
     HomeComponent,
     HomeNavigationComponent,
     EmployeeNavigationComponent,
-    LogNavigationComponent
+    LogNavigationComponent,
+    SecurityNavigationComponent
   ],
   imports: [
     BrowserModule,
