@@ -3,3 +3,39 @@
     .bgm{background-image:url('https://static.vecteezy.com/system/resources/previews/008/169/402/non_2x/abstract-shapes-and-line-in-nude-pastel-colors-neutral-background-in-minimalist-style-contemporary-illustration-free-vector.jpg') ;}
 </style>
 <div class="bgm" style="height:900px;background-position:center;background-repeat: no-repeat;background-size: cover;border: 3px;">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    
+                <div class="row g-3">
+    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <h1>Leave Status</h1>       
+                    </div>
+
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">                   
+                        <label for="" class="form-label"><h5>Click Here</h5> </label>  
+                    </div>
+                    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <button (click)="readValue()" class="btn btn-success">Status</button>
+                    </div>
+                
+                
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center" *ngFor="let i of searchData">
+    
+                        <label for="" class="form-label"><b>Leave Status</b></label>
+                        <input type="text" class="form-control" *ngIf="i.status==1;else rejected" value="Accepted">
+                        <ng-template #rejected>
+                            <input type="text" class="form-control" value="Rejected">
+                        </ng-template>
+    
+    
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>

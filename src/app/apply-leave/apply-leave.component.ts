@@ -17,7 +17,7 @@ export class ApplyLeaveComponent {
   applyDate=""
   
   constructor(private api:ApiService){}
-  readValues=()=>
+  readValue=()=>
   {
     let data:any={"empId":this.empId,"type":this.type,"remarks":this.remarks,"fromDate":this.fromDate,"toDate":this.toDate,"applyDate":this.applyDate}
     console.log(data)
