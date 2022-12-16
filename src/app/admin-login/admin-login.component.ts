@@ -13,7 +13,7 @@ export class AdminLoginComponent {
 
   constructor(private route:Router){}
 
-  readValues=()=>
+  readValue=()=>
   {
     let data:any={"username":this.username,"password":this.password}
     console.log(data)
