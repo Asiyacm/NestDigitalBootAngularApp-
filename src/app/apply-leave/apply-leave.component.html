@@ -3,56 +3,54 @@
     .bgm{background-image:url('https://static.vecteezy.com/system/resources/previews/008/169/402/non_2x/abstract-shapes-and-line-in-nude-pastel-colors-neutral-background-in-minimalist-style-contemporary-illustration-free-vector.jpg') ;}
 </style>
 <div class="bgm" style="height:900px;background-position:center;background-repeat: no-repeat;background-size: cover;border: 3px;">
-<div class="container">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3">
-                
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <h1>Apply Leave</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="row g-3">
+                    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <h1>Apply Leave</h1>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Employee id</label>
+                        <input name="empId" [(ngModel)]="empId" type="text" class="form-control">
+    
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Leave type</label>
+                        <select name="type" [(ngModel)]="type" id="" class="form-control">
+                            <option value="Sick leave">Sick leave</option>
+                            <option value="Casual leave">Casual leave</option>
+                            <option value="Special leave">Special leave</option>
+                        </select>
+    
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Remarks</label>
+                        <input name="remarks" [(ngModel)]="remarks" type="text" class="form-control">
+    
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">From date</label>
+                        <input name="fromDate" [(ngModel)]="fromDate" type="date" class="form-control">
+                    </div>
+    
+                    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">To date</label>
+                        <input name="toDate" [(ngModel)]="toDate" type="date" class="form-control">
+                    </div>
+    
+                    <!-- <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <label for="" class="form-label">Apply date</label>
+                        <input name="applyDate" [(ngModel)]="applyDate" type="date" class="form-control">
+                    </div> -->
+    
+                    
+    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                        <button (click)="readValue()" class="btn btn-success">Submit</button>
+                    </div>
                 </div>
-
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Employee Id</label>
-                    <input name="empId" [(ngModel)]="empId" type="text" class="form-control">
-                </div>
-
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Leave Type</label>
-                    <select name="type" [(ngModel)]="type" id="" class="form-control">
-                        <option value="Sick leave">Sick Leave</option>
-                        <option value="Casual leave">Casual Leave</option>
-                        <option value="Special leave">Special Leave</option>
-                    </select>
-                </div>
-
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Remarks</label>
-                    <input name="remarks" [(ngModel)]="remarks" type="text" class="form-control">
-                </div>
-                
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">From Date</label>
-                    <input name="fromDate" [(ngModel)]="fromDate" type="date" class="form-control">
-                </div>
-
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">To Date</label>
-                    <input name="toDate" [(ngModel)]="toDate" type="date" class="form-control">
-                </div>
-
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Apply Date</label>
-                    <input name="applyDate" [(ngModel)]="applyDate" type="date" class="form-control">
-                </div>
-
-                
-
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button (click)="readValues()" class="btn btn-success">Submit</button>
-                </div>
-                
             </div>
         </div>
     </div>
-</div>
