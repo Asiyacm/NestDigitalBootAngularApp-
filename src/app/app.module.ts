@@ -29,6 +29,7 @@ import { ViewEmployeeLogComponent } from './view-employee-log/view-employee-log.
 import { HomeComponent } from './home/home.component';
 import { HomeNavigationComponent } from './home-navigation/home-navigation.component';
 import { EmployeeNavigationComponent } from './employee-navigation/employee-navigation.component';
+import { LogNavigationComponent } from './log-navigation/log-navigation.component';
 
 
 const myRoute:Routes=[
@@ -169,7 +170,8 @@ const myRoute:Routes=[
     ViewEmployeeLogComponent,
     HomeComponent,
     HomeNavigationComponent,
-    EmployeeNavigationComponent
+    EmployeeNavigationComponent,
+    LogNavigationComponent
   ],
   imports: [
     BrowserModule,
