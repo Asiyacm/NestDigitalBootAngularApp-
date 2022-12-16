@@ -78,4 +78,19 @@ export class ApiService {
   }
 
 
+  addEmployeeLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/employeeLog",dataToSend)
+  }
+
+  viewEmployeeLog=()=>
+  {
+    return this.http.get("http://localhost:8080/logEmployeeView")
+  }
+
+  viewDailyEmployeeLog=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/logEmployeeViewDaily",dataToSend)
+  }
+
 }
