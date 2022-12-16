@@ -22,6 +22,7 @@ import { EmployeeDailyLogComponent } from './employee-daily-log/employee-daily-l
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
 import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 import { VisitorDailyLogComponent } from './visitor-daily-log/visitor-daily-log.component';
+import { ViewVisitorLogComponent } from './view-visitor-log/view-visitor-log.component';
 
 
 const myRoute:Routes=[
@@ -103,6 +104,11 @@ const myRoute:Routes=[
   {
     path:"visitorDailyLog",
     component:VisitorDailyLogComponent
+  },
+
+  {
+    path:"viewVisitorLog",
+    component:ViewVisitorLogComponent
   }
 
 
@@ -130,7 +136,8 @@ const myRoute:Routes=[
     EmployeeDailyLogComponent,
     EmployeeLogComponent,
     VisitorLogComponent,
-    VisitorDailyLogComponent
+    VisitorDailyLogComponent,
+    ViewVisitorLogComponent
   ],
   imports: [
     BrowserModule,
