@@ -72,4 +72,10 @@ export class ApiService {
   }
 
 
+  applyLeave=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/lAdd",dataToSend)
+  }
+
+
 }

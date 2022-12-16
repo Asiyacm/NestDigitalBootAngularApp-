@@ -17,7 +17,7 @@ export class AddSecurityComponent {
   constructor(private api:ApiService){}
 
 
-  readValues=()=>
+  readValue=()=>
   {
     let data:any={
       "empCode":this.empCode,"name":this.name,"username":this.username,"password":this.password

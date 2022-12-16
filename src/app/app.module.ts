@@ -17,6 +17,7 @@ import { SecurityLoginComponent } from './security-login/security-login.componen
 import { SecuritySearchComponent } from './security-search/security-search.component';
 import { SecurityViewComponent } from './security-view/security-view.component';
 import { SecurityViewProfileComponent } from './security-view-profile/security-view-profile.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 
 
 const myRoute:Routes=[
@@ -74,7 +75,13 @@ const myRoute:Routes=[
   {
     path:"securityProfileView",
     component:SecurityViewProfileComponent
+  },
+
+  {
+    path:"applyLeave",
+    component:ApplyLeaveComponent
   }
+
 
 
   
@@ -95,7 +102,8 @@ const myRoute:Routes=[
     SecurityLoginComponent,
     SecuritySearchComponent,
     SecurityViewComponent,
-    SecurityViewProfileComponent
+    SecurityViewProfileComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,
